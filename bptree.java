@@ -280,7 +280,7 @@ class node
 		out.write("\n}\n");
 		out.close();
 		Runtime.getRuntime().exec("dot -Tps -O output.dot");
-		Runtime.getRuntime().exec("xdg-open output.dot.ps");
+		Runtime.getRuntime().exec("evince output.dot.ps");
 	}
 
 	static void sort_display(node root)
